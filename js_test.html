@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css_js.css">
+</head>
+
+<body>
+    <script src="js_test.js"></script>
+    <button onclick="alert('Hi!')">Нажми на меня</button>
+    <br>
+    <br>
+    <button onmouseover="alert('How are u?')">Наведи на меня</button>
+    <br>
+    <br>
+    <button ondblclick="alert('I am fine!')">Двойной клик по мне</button>
+    <br>
+    <br>
+    <div onmouseout="alert('tell me something')"> Наведи на меня, а потом убери!</div>
+    <br>
+    <br>
+    <input type="text" id="test1" value="ку-ку!">
+    <button onclick="buttonClick()">Нажми на меня</button>
+    <br>
+    <br>
+    <input type="text" id="input1" value="hi">
+    <button onclick="func(input1)">Нажми на меня</button>
+    <br>
+    <br>
+    <img src="1.jpg" width="200px" height="200px" id="test2">
+    <button onclick="go()">Нажми на меня!</button>
+    <br>
+    <br>
+    <input id="test3" type="button" value="what do you need?" onclick="func(this)">
+    <br>
+    <br>
+    <input type="text" id="test4" value="me too^-^">
+    <button onclick="button1Click(test4)">Click on me</button>
+    <br>
+    <br>
+    <input type="text" id="test5" value="hide me">
+    <button onclick="hide(test5)">Click on me</button>
+    <button onclick="show(test5)">Now click here</button>
+    <br>
+    <br>
+    <input type="text" id="test6" value="lets have fun!">
+    <button onclick="button2Click(test6)">OK</button>
+    <br>
+    <p>
+        Это input type="submit".
+    </p>
+    <input type="submit" onclick="block(this)" value="Нажми на меня!" id="block">
+    <input type="submit" onclick="unblock('button')" value="Нажми чтобы отблокировать элемент" style="display: none;" id="unblock">
+    <br>
+    <br>
+    <input type="submit" onclick="button3Click(this)" value="0">
+    <br>
+    <br>
+    <input type="text" id="test7" value="Wanna know what i can do">
+    <button onclick="button4Click(test7)">Yes</button>
+    <br>
+    <br>
+    <input type="text" id="test8" value="Love">
+    <input type="text" id="test9" value="Hate">
+    <button onclick="button5Click()">not =</button>
+    <br>
+    <br>
+    <input type="text" id="test10" value="" placeholder="Ваше число">
+    <input id="result" value="result" disabled>
+    <button onclick="button6Click(test10)">Go</button>
+    <br>
+    <br>
+    <input type="text" value="" placeholder="number!" id="test11"> <br> <br>
+    <input id="result2" value="result" disabled><br><br>
+    <button onclick="button7Click(test11)">Go</button>
+    <br>
+    <br>
+    <input type="submit" onclick="go1(this)" value="let me show you smth">
+    <br>
+    <input type="text" value="" id="input12">
+    <br><br>
+    <input type="submit" onclick="add('+')" value="Я добавлю +"><br>
+    <input type="submit" onclick="add('-')" value="Я добавлю -"><br>
+    <input type="submit" onclick="add('/')" value="Я добавлю /"><br>
+    <input type="submit" onclick="add('*')" value="Я добавлю *"><br>
+    <br><br>
+    <input type="submit" onclick="add('1')" value="1"><br>
+    <input type="submit" onclick="add('2')" value="2"><br>
+    <input type="submit" onclick="add('3')" value="3"><br>
+    <input type="submit" onclick="add('4')" value="4"><br>
+    <input type="submit" onclick="add('5')" value="5"><br>
+    <input type="submit" onclick="add('6')" value="6"><br>
+    <input type="submit" onclick="add('7')" value="7"><br>
+    <input type="submit" onclick="add('8')" value="8"><br>
+    <input type="submit" onclick="add('9')" value="9"><br>
+    <input type="submit" onclick="add('0')" value="0"><br>
+</body>
+
+
+</html>
