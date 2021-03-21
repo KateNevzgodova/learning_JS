@@ -8,13 +8,14 @@ function func(input1) {
     input.value = 'ой, я поменяла текст!';
 }
 
-function go() {
+
+function go(test2) {
     elem = document.getElementById('test2');
     elem.src = '2.jpg';
 }
 
-function func(elem) {
-    elem.value = 'oh, you need love^_^';
+function func(event) {
+    event.target.value = 'oh, you need love^_^';
 }
 
 function button1Click(test4) {
@@ -99,3 +100,13 @@ function add(text) {
     var input12 = document.getElementById('input12');
     input12.value = input12.value + text;
 }
+
+
+function sum(a, b) {
+    const result = a + b;
+    alert("sum=" + result)
+}
+
+sum(2, 2);
+sum(3, 0);
+sum(12, 2);
