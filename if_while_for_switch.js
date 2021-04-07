@@ -18,27 +18,30 @@ if (min <= 15) {
 // Перемен lang принимает 2 знач: 'ru' 'en'. Если знач 'ru', то в arr запишем массив на рус языке, а если 'en' – на англ.
 // Решите задачу через 2 if, через switch-case и через многомерный массив без ифов и switch.
 let lang = 'ru';
-// 1) if (lang == 'ru') {
-//     let arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
-//     console.log(arr);
-// } else {
-//     let arr = ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
-//     console.log(arr);
-// }
-// 2) switch (lang) {
-//     case 'ru':
-//         let arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
-//         console.log(arr)
-//         break;
-//     case 'en':
-//         arr = ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
-//         console.log(arr);
-//         break;
-// }
 let arr = {
-    'ru': ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
-    'en': ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
+        'ru': ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+        'en': ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
+    }
+    //1)
+if (lang == 'ru') {
+    //let arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
+    console.log(arr[lang]);
+} else {
+    //let arr = ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
+    console.log(arr[lang]);
 }
+//2) 
+switch (lang) {
+    case 'ru':
+        //let arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
+        console.log(arr[lang])
+        break;
+    case 'en':
+        //arr = ['mo', 'tu', 'wd', 'th', 'fr', 'sa', 'su']
+        console.log(arr[lang]);
+        break;
+}
+
 console.log('new one' + ' ' + arr[lang]);
 // Работа с if-else
 //  Если перем a равна нулю, то выведите 'Верно', иначе 'Неверно'. Проверьте при a, равном 1, 0, -3.
@@ -107,6 +110,9 @@ let test = true;
 // }
 if (test = true) console.log('ye, this is a short form');
 else console.log('no, this is not a test!');
+
+const resTest = (test) ? 'ye, this is a short form' : 'no, this is not a test!';
+console.log(resTest)
 
 // Если test не равна true, то выведите 'Верно', иначе 'Неверно'. Проверьте при test, равном true, false.
 // Напишите два варианта скрипта - с короткой записью и с длинной.
