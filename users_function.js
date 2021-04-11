@@ -355,3 +355,31 @@ function nstr(line) {
     }
 }
 console.log(nstr('123456'));
+// Дан массив с числами. Выведите последовательно его элементы используя рекурсию и не используя цикл.
+function func(arr16) {
+    console.log(arr16[0]);
+    arr16.splice(0, 1);
+    if (arr16.length > 0) {
+        func(arr16);
+    }
+}
+// Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры. И так, пока
+// сумма не станет однозначным числом (9 и менее).
+var f = 26878;
+
+function sum(f) {
+    let arr17 = String(f).split('');
+    let resultArr17 = 0;
+    for (let i = 0; i < arr17.length; i++) {
+        resultArr17 += Number(arr17[i]);
+    }
+
+    if (resultArr17 > 9) {
+        f = resultArr17;
+        sum(f);
+    } else {
+        console.log('сумма цифр вашего числа стала <9 -', resultArr17);
+    }
+}
+
+sum(f);
