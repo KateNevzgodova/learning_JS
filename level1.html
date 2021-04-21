@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="level1.css">
+    <title>Level 1</title>
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div id="header-container" class="container">
+                <h2>HEADER CONTENT</h2>
+                <nav>
+                    <div class="topnav" id="myTopnav">
+                        <a href="#">About Site</a>
+                        <a href="#">Features</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">My Profile</a>
+                    </div>
+                    <a class="icon" onclick="myFunction()">&#9776;</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <h2 class="h2-main">Slideshows</h2>
+
+                <div class="slideshow-container">
+                    <div class="slides1">
+                        <img src="img\11.jpg">
+                    </div>
+
+                    <div class="slides1">
+                        <img src="img\111.jpg">
+                    </div>
+
+                    <div class="slides1">
+                        <img src="img\1111.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+                    <a class="next" onclick="plusSlides(1, 0)">❯</a>
+                </div>
+
+                <div class="slideshow-container">
+                    <div class="slides2">
+                        <img src="img\11111.jpg">
+                    </div>
+
+                    <div class="slides2">
+                        <img src="img\111111.jpg">
+                    </div>
+
+                    <div class="slides2">
+                        <img src="img\11.jpg">
+                    </div>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slides3">
+                        <img src="img\32521-aleni.jpg">
+                    </div>
+
+                    <div class="slides3">
+                        <img src="img\32773-aleni.jpg">
+                    </div>
+
+                    <div class="slides3">
+                        <img src="img\122439-aleni.jpg">
+                    </div>
+                    <div class="slides3">
+                        <img src="img\138029-aleni.jpg">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="level1.js"></script>
+</body>
+
+</html>

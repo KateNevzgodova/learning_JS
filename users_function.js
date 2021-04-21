@@ -381,5 +381,36 @@ function sum(f) {
         console.log('сумма цифр вашего числа стала <9 -', resultArr17);
     }
 }
-
 sum(f);
+// задача смоего сайта
+let heart = document.querySelector('.heart');
+let likesNumber = document.querySelector('.likes-number');
+let counter = 100;
+
+heart.onclick = function() {
+    if (heart.classList.contains('added')) {
+        counter--;
+        document.querySelector('.dislike').disabled = false;
+    } else {
+        counter++;
+        document.querySelector('.dislike').disabled = true;
+    }
+
+    likesNumber.textContent = counter;
+    heart.classList.toggle('added');
+};
+let brokenHeart = document.querySelector('.dislike');
+let dislikeNumber = document.querySelector('#dislike');
+let counterDislikes = 50;
+brokenHeart.onclick = function func() {
+        if (brokenHeart.classList.contains('added')) {
+            counterDislikes--;
+            document.querySelector('.heart').disabled = false;
+        } else {
+            counterDislikes++;
+            document.querySelector('.heart').disabled = true;
+        }
+        dislikeNumber.textContent = counterDislikes;
+        brokenHeart.classList.toggle('added');
+    }
+    //
