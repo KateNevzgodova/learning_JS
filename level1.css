@@ -143,3 +143,36 @@ img {
 .dot:hover {
     background-color: #717171;
 }
+
+#carousel {
+    display: block;
+    margin: auto;
+    padding: 20px 41px;
+    max-width: 317px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+    height: 50px;
+    width: 48px;
+}
+
+#go1,
+#stop {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+
+#input7 {
+    display: block;
+    margin: auto;
+    border-style: dashed;
+    border-block-width: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
